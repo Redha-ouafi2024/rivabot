@@ -538,7 +538,7 @@ animation: gradient 3s linear infinite; }
      #news-container {
             width: 100%;
             margin: 3px;
-            background: transparent;
+            background: white;
             padding: 3px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;
