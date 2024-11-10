@@ -1,0 +1,651 @@
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header1 {
+ display: flex;
+ flex-wrap: wrap;
+
+ font-size: 1em;
+ background-color: white;
+ border: 0px solid cyan;
+ padding: 2px;
+}
+
+.header2 {
+ display: flex;
+ flex-wrap: wrap;
+
+  font-size:4em;
+  color:cyan;
+ background-color: black;
+ border: 0px solid cyan;
+ padding: 10px;
+ 
+}
+
+ .footer {
+  display: flex;
+ flex-wrap: wrap;
+  justify-content: center;
+ background-color: WHITE;
+ border: 1px solid red;
+ padding: 10px;
+ color: black;
+ text-align: center;
+ font-size: 1em;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ }
+
+/* Six buttons with code link to some pages in this project */
+ .button-group {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+ }
+
+ .button {
+ display: inline-block;
+ padding: 3px;
+ margin: 3px;
+ background-color: red;
+ color: white;
+ border: 1px solid white;
+ border-radius: 3px;
+ font-size: 1em;
+ text-align: center;
+ text-decoration: none;
+ }
+/* Fixed background */
+ body {
+
+   background-color: #FFFFFF;
+   background-image: url('imgv1.jpg');
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: repeat;
+   background-size: 100% 100%;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+
+    }
+
+ 
+
+           .buttonm-group {
+
+ display: flex;
+ flex-wrap: wrap;
+ width: 100px;
+
+ justify-content: center;
+ align-items: center;
+ margin-top: 3px;
+ }
+
+ .buttonm {
+
+  display: inline-block;
+ padding: 3px;
+ margin: 3px;
+ background-color: salmon;
+
+  border: 1px solid black;
+ border-radius: 3px;
+ font-size: 1em;
+ color: white;
+ text-align: center;
+ text-decoration: none;
+ }
+
+
+
+                   /* Style the container */
+        .image-container {
+            width: 400px; /* Adjust the width as needed */
+            height: 300px; /* Set the desired height */
+            overflow: auto; /* Add scroll bar when content exceeds container height */
+            background-color: transparent; /* White background */
+            border: 0px solid skyblue; /* Optional border for visual clarity */
+            padding: 3px; /* Add some padding for readability */
+        }
+        /* Style the text inside the container */
+        .image-content {
+             display: flex;
+             flex-wrap: wrap;
+              margin:auto;
+			  padding:3px;
+
+
+        }
+
+
+
+           /* Style the container */
+        .text-container {
+
+
+            width: 400px; /* Adjust the width as needed */
+            height: 300px; /* Set the desired height */
+            overflow: auto; /* Add scroll bar when content exceeds container height */
+            background-color: transparent; /* White background */
+            border: 1px solid #ccc; /* Optional border for visual clarity */
+            padding: 3px; /* Add some padding for readability */
+        }
+        /* Style the text inside the container */
+        .text-content {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333; /* Optional text color */
+        }
+
+
+
+
+                /* Container for the carousel */
+        .carousel-container {
+            background-color: salmon;
+            width: 100%;
+             height: 50px;
+            overflow: hidden;
+            position: relative;
+        }
+        /* Image carousel */
+        .carousel {
+            display: flex;
+            width: 100%;
+            animation: slide 60s infinite linear;
+        }
+        .carousel img {
+            width: 100%;
+             height: 40px;
+            border: 1px solid red;
+               padding: 1px;
+ margin: 6px;
+            height: auto;
+        }
+        /* Navigation buttons */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: 1px solid white;
+            outline: none;
+        }
+        .carousel-btn.left {
+            left: 0;
+        }
+        .carousel-btn.right {
+            right: 0;
+        }
+
+
+
+
+                     text:hover {
+  background-color: violet;
+}
+
+
+
+
+
+
+  /*slider imgs*/
+
+.slider-container {
+overflow: auto;
+
+    width: 100%;
+height: 100%
+border: 1px solid ; color: black;
+}
+
+.slider {
+
+    display: flex;
+    animation: slide 60s infinite linear;
+
+}
+
+.slider img {
+
+
+    width: 100%;
+    height: auto;
+
+}
+
+@keyframes slide {
+
+
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+a:hover {
+    background-color: cyan;
+}
+
+
+
+    .button:hover {
+  background-color: cyan; /* Button color on hover */
+}
+
+
+
+     #audio-player {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+
+
+
+       .container6 {
+           width: 70%;
+           height: 250px;
+           display: flex;
+           justify-content: center;
+           gap: 10px;
+       }
+
+       .container6 img {
+           width: 10%;
+           height: 100%;
+           object-fit: cover;
+           border-radius: 10px;
+           border: 2px solid white;
+           transition: all ease-in-out 0.5s;
+       }
+       .container6 img:hover {
+           width: 25%;
+       }
+
+
+
+
+
+
+
+
+
+       .text {
+background: linear-gradient(
+to right,rgba(0, 168, 253), black 30%, red);
+background-size: 200% auto;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: gradient 3s linear infinite; }
+@keyframes gradient {
+0% { background-position: 0% 75%;}
+50% { background-position: 100% 50%;}
+100% { background-position: 0% 70%;}
+}
+
+
+
+
+    
+  .chat-container {
+            background-color: rgba(255, 255, 255, 0.3);
+            border:1px solid cyan;
+            backdrop-filter:blur(20px);
+            max-width: 400px;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .chat-box {
+            background-color: transparent;
+             backdrop-filter:blur(20px);
+            padding: 3px;
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid cyan;
+            margin-bottom: 10px;
+             box-shadow: 0 0 4px skyblue;
+        }
+
+        .message {
+            display: flex;
+            align-items: center;
+            padding: 3px;
+            margin: 3px;
+            border-radius: 10px;
+            width: fit-content;
+            max-width: 80%;
+        }
+
+        .bot {
+            background-color: cyan;
+            color: black;
+            align-self: flex-start;
+        }
+
+        .user {
+            background-color: skyblue;
+            color: white;
+            align-self: flex-end;
+            flex-direction: row-reverse;
+        }
+
+        .message img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+
+        .input4 {
+            padding: 10px;
+            border: 1px solid cyan;
+            border-radius: 4px;
+            width: calc(100% - 70px);
+            box-sizing: border-box;
+        }
+
+        .button4 {
+            width:60px;
+            padding: 3px;
+            background-color: white;
+            border: 1px solid cyan;
+            color: black;
+            
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .button4:hover {
+            background-color: cyan;
+            color:black;
+        }
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .user-info input {
+            margin-bottom: 5px;
+        }
+
+
+
+         /* تنسيق الوقت */
+        .time-container {
+            background-color: transparent;
+            padding: 3px ;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #333333;
+            font-size: 2em;
+        }
+      
+
+       
+
+
+   .date-container {
+            text-align: center;
+            padding: 3px;
+            border-radius: 8px;
+            background-color: transparent;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .date {
+            font-size: 14px;
+            color: black;
+        }
+
+
+
+          .music-player {
+
+        margin: auto;
+         width: 98%;
+         height: 40px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 3px;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+       
+
+
+ .lightbox {
+  display: self;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 70%;
+  top: 50;
+  left: 0;
+  background-color: transparent;
+}
+.lightbox-content {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: transparent;
+  padding: 20px;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+
+
+ iframe {
+            display: none;
+        }
+        .toggle-button {
+            width: 300px;
+            padding: 10px;
+            background-color: #0074D9;
+            color: #FFF;
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+
+  .toggle-button {
+ display: inline-block;
+ padding: 3px;
+ margin: 3px;
+ background-color: white;
+
+  border: 2px solid red;
+ border-radius: 8px;
+ font-size: 1em;
+ color: red;
+ text-align: center;
+ text-decoration: none;
+ cursor: pointer;
+ }
+
+
+              .toggle-button:hover {
+  background-color: cyan;
+  color:black;
+}
+
+
+
+     #news-container {
+            width: 100%;
+            margin: 3px;
+            background: transparent;
+            padding: 3px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+             overflow-x: auto;
+        }
+
+        .text123 {
+            text-align: center;
+            margin:auto;
+            color:white;
+            font-size:20px;
+        }
+
+        #news-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 15px;
+            animation: scrollNews 120s linear infinite;
+
+
+        }
+
+        #news-list li {
+            padding: 5px;
+            border: 1px solid cyan;
+            background-color: transparent;
+            border-radius: 1px;
+            white-space: nowrap; /* ??? ???? ?? ???????? ??? ????? ?????? */
+        }
+
+        #news-list li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #news-list li:hover {
+            background-color: #e6e6e6;
+        }
+
+
+        @keyframes scrollNews {
+            0% {
+                transform: translateX(100%); /* ??? ?????? ?? ???? ?????? */
+            }
+            100% {
+                transform: translateX(-100%); /* ????? ?????? ??? ???? ?????? */
+            }
+        }
+
+
+
+
+
+ /* Flexible layout responsive design */
+
+ .header1 {
+ font-size: 0.5em;
+ padding: 2px;
+ }
+ /* Big red header with red border */
+ .header2 {
+ font-size: 4em;
+ padding: 2px;
+ }
+ /* Six buttons with code link to some pages in this project */
+ .button-group {
+ margin-top: 6px;
+ }
+ .button {
+ padding: 3px;
+ margin: 3px;
+ font-size: 1em;
+ }
+
+    .buttonm-group {
+ margin-top: 3px;
+ }
+ .buttonm {
+ padding: 3px;
+ margin: 3px;
+ font-size: 1em;
+ }
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+  flex: 100%;
+
+  padding: 5px;
+}
+.column img {
+
+  width: 100%;
+  height: auto;
+
+      }
+@media screen and (max-width: 320px) {
+  .column {
+
+    width: 100%;
+  }
+
+
+}
