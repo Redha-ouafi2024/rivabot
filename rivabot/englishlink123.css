@@ -566,7 +566,7 @@ animation: gradient 3s linear infinite; }
         #news-list li {
             padding: 5px;
             border: 1px solid cyan;
-            background-color: transparent;
+            background-color: white;
             border-radius: 1px;
             white-space: nowrap; /* ??? ???? ?? ???????? ??? ????? ?????? */
         }
