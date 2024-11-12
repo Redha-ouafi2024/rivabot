@@ -541,8 +541,7 @@ animation: gradient 3s linear infinite; }
             background: transparent;
             padding: 3px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-             overflow-x: auto;
+         
         }
 
         .text123 {
@@ -559,6 +558,8 @@ animation: gradient 3s linear infinite; }
             flex-wrap: nowrap;
             gap: 15px;
             animation: scrollNews 120s linear infinite;
+		   overflow: hidden;
+             overflow-x: auto;
 
 
         }
